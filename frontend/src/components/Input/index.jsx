@@ -6,5 +6,8 @@ export default function Input(props) {
     backgroundColor: props.valorInvalido ? "ffcdd2" : "#ffffff",
   };
 
-  return <input type="text" {...props} style={estilo} />;
+  let propriedades = Object.assign({}, props);
+  delete propriedades.valorInvalido;
+
+  return <input type="text" style={estilo} {...propriedades} />;
 }
