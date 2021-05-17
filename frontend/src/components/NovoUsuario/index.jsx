@@ -1,7 +1,6 @@
 import React from "react";
 import Label from "../Label";
 import Input from "../Input";
-import GenderImage from '../GenderImage'
 
 class NovoUsuario extends React.Component {
   constructor(props) {
@@ -42,7 +41,6 @@ class NovoUsuario extends React.Component {
             defaultValue={this.state.usuario.nome}
             onChange={this.atualizarNome.bind(this)}
           />
-          <GenderImage genero='f' />
         </form>
       </div>
     );
