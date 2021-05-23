@@ -83,6 +83,37 @@ class ImageScroller extends React.Component {
       ></span>
     );
   }
+
+  renderizarButtonImage(posicao) {
+    return (
+      <ButtonImage
+        posicao={posicao}
+        onTouchStart={(e) => e.stopPropagation()}
+        onTouchMove={(e) => e.stopPropagation()}
+        onTouchEnd={(e) => e.stopPropagation()}
+        onClick={(e) => {
+          e.preventDefault();
+          let manipularEvento = this.state.manipularEvento;
+          let index = manipularEvento.index;
+          if (posicao == "esquerda") {
+            index += -1;
+          } else {
+            index += 1;
+          }
+          manipularEvento.definirIndex(index);
+          manipularEvento.atualizarClique();
+          this.setState(
+            {
+              manipularEvento: manipularEvento,
+            },
+            () => {
+              this.props.onChange(this.obterSelecionado());
+            }
+          );
+        }}
+      />
+    );
+  }
 }
 
 export default ImageScroller;
