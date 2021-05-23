@@ -114,6 +114,58 @@ class ImageScroller extends React.Component {
       />
     );
   }
+
+  renderizarImageScroller() {
+    const estilo = {
+      boxSizing: "border-box",
+      borderWidth: "1px",
+      borderBottomWidth: "0",
+      borderStyle: "solid",
+      borderColor: "#cccccc",
+      borderRadius: "5px",
+      borderBottomLeftRadius: "0",
+      borderBottomRightRadius: "0",
+      width: "310px",
+      height: "160px",
+      overflow: "hidden",
+    };
+
+    return (
+      <div
+        style={estilo}
+        onTouchStart={this.onTouchStart.bind(this)}
+        onTouchMove={this.onTouchMove.bind(this)}
+        onTouchEnd={this.onTouchEnd.bind(this)}
+      >
+        {this.renderizarButtonImage("esquerda")}
+        {this.renderizarSelecionado()}
+        {this.renderizarImagens()}
+        {this.renderizarButtonImage("direita")}
+      </div>
+    );
+  }
+
+  onTouchStart(e) {
+    let clientX = e.targetTouches[0].clientX;
+    let manipularEvento = this.state.manipularEvento;
+    manipularEvento.iniciar(clientX);
+    this.setState({ manipularEvento: manipularEvento });
+  }
+
+  onTouchMove(e) {
+    let clientX = e.targetTouches[0].clientX;
+    let manipularEvento = this.state.manipularEvento;
+    manipularEvento.mover(clientX);
+    this.setState({ manipularEvento: manipularEvento });
+  }
+
+  onTouchEnd(e) {
+    let manipularEvento = this.state.manipularEvento;
+    manipularEvento.atualizarToque();
+    this.setState({ manipularEvento: manipularEvento }, () => {
+      this.props.onChange(this.obterSelecionado());
+    });
+  }
 }
 
 export default ImageScroller;
