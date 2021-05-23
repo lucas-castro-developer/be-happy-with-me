@@ -67,6 +67,22 @@ class ImageScroller extends React.Component {
 
     return <li style={estilo}>{lista}</li>;
   }
+
+  renderizarSelecionado() {
+    return (
+      <span
+        style={{
+          float: "left",
+          width: "140px",
+          height: "160px",
+          marginLeft: "42px",
+          backgroundColor: "#00C853",
+          position: "relative",
+          zIndex: -2,
+        }}
+      ></span>
+    );
+  }
 }
 
 export default ImageScroller;
