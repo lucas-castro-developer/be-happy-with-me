@@ -187,6 +187,15 @@ class ImageScroller extends React.Component {
 
     return <div style={estilo}>{this.obterSelecionado().toString()}</div>;
   }
+
+  render() {
+    return (
+      <div>
+        {this.renderizarImageScroller()}
+        {this.renderizarLabel()}
+      </div>
+    );
+  }
 }
 
 export default ImageScroller;
