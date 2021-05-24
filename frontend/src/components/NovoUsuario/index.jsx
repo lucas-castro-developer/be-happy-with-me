@@ -108,6 +108,31 @@ class NovoUsuario extends React.Component {
     }
   }
 
+  renderizarAvatar() {
+    if (this.state.primeiraVisaoCompleta) {
+      return (
+        <section>
+          <Label texto="Escolha seu avatar:" />
+          <ImageScroller
+            arquivo="img/avatars.png"
+            eixoX={this.state.usuario.genero == "m" ? 0 : 1}
+            elementos={Avatar.obterTodos()}
+            selecionado={this.state.usuario.avatar}
+            onChange={(avatar) => {
+              let usuario = this.state.usuario;
+              usuario.avatar = avatar;
+              this.setState({
+                usuario: usuario,
+              });
+            }}
+          />
+        </section>
+      );
+    } else {
+      return null;
+    }
+  }
+
   renderizarBotoes() {
     if (this.state.primeiraVisaoCompleta) {
       return (
