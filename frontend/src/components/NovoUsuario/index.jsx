@@ -174,6 +174,7 @@ class NovoUsuario extends React.Component {
         <form className="pure-form pure-form-stacked">
           {this.renderizarNome()}
           {this.renderizarGenero()}
+          {this.renderizarAvatar()}
           {this.renderizarBotoes()}
         </form>
       </div>
