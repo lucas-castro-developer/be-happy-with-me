@@ -4,7 +4,7 @@ class Usuario {
   constructor() {
     this.nome = "";
     this.genero = "";
-    this.Avatar = Avatar.obterTodos()[0];
+    this.avatar = Avatar.obterTodos()[0];
   }
 
   validarNome() {
