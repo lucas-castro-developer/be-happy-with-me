@@ -166,6 +166,27 @@ class ImageScroller extends React.Component {
       this.props.onChange(this.obterSelecionado());
     });
   }
+
+  renderizarLabel() {
+    const estilo = {
+      boxSizing: "border-box",
+      borderWidth: "1px",
+      borderStyle: "solid",
+      borderTopWidth: "0",
+      borderColor: "#cccccc",
+      borderRadius: "5px",
+      borderTopLeftRadius: "0",
+      borderTopRightRadius: "0",
+      backgroundColor: "#cccccc",
+      color: "#444444",
+      fontSize: "20px",
+      textAlign: "center",
+      padding: "5px",
+      width: "380px",
+    };
+
+    return <div style={estilo}>{this.obterSelecionado().toString()}</div>;
+  }
 }
 
 export default ImageScroller;
