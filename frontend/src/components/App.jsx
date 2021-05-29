@@ -7,7 +7,7 @@ import Usuario from "../models/Usuario";
 class App extends React.Component {
   constructor() {
     super();
-    usuario.obter(
+    Usuario.obter(
       (usuario) => {
         this.state = {
           usuario: usuario,
@@ -23,7 +23,7 @@ class App extends React.Component {
 
   msgNovoUsuario(usuario) {
     let genero = usuario.genero == "m" ? "o" : "a";
-    this.refs.toast.sucesso(`Seja bem vindo${genero} ${usuario.nome}!`);
+    this.refs.toast.sucesso(`Seja bem vind${genero} ${usuario.nome}!`);
   }
 
   renderizarNovoUsuario() {
