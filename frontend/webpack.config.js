@@ -65,5 +65,6 @@ module.exports = {
     publicPath: "/",
     contentBase: "./dist",
     headers: { "Cache-Control": "max-age=600" },
+    historyApiFallback: true,
   },
 };
