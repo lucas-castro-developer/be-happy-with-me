@@ -8,8 +8,17 @@
     <title>behappywith.me</title>
   </head>
   <body>
+    <noscript>
+      <div>
+        Desculpe, mas não é possível utilizar esta aplicação com o recurso de
+        scripts desabilitado. Verifique como habilitado e tente novamente.
+        <br />
+        <img src="img/logo.png" />
+      </div>
+    </noscript>
     <div id="main"></div>
     <script>
+      //<!--
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("behappy.sw.js")
@@ -20,6 +29,7 @@
             console.log("Erro no registro: ", err);
           });
       }
+      //-->
     </script>
   </body>
 </html>
