@@ -43,7 +43,7 @@
 
 O projeto Be Happy With Me tem por objetivo disponibilizar uma ferramenta de feedback feliz para os usuários.
 
-Por hora, a estrutura abarca somente a versão frontend, mas já com a estrutura de PWA implementada
+Por hora, a estrutura abarca somente a versão frontend, mas já com a estrutura de PWA implementada.
 
 O usuário pode escolher o nome e o avatar que deseja usar.
 
