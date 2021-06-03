@@ -1,4 +1,4 @@
-# My Money App
+# Be Happy With Me
 
 <br />
 <p align="center">
@@ -9,7 +9,7 @@
   <h3 align="center">BeHappyWithMe</h3>
 
   <p align="center">
-    Organize suas finanças de uma forma inteligente e organizada.
+    Um feedback feliz para a pessoa que você mais gosta!
     <br />
     <a href="https://github.com/lucas-castro-developer/be-happy-with-me"><strong>Explore as documentações »</strong></a>
     <br />
@@ -64,20 +64,11 @@ Este projeto foi construído com o auxílio das seguintes ferramentas
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 * [ReactJS](https://pt-br.reactjs.org/)
-* [MongoDB](https://www.mongodb.com/2)
-* [Bootstrap](https://getbootstrap.com/)
-* [React Redux](https://react-redux.js.org/)
 
 <!-- GETTING STARTED -->
 ## Iniciando
 
 Para começar a manipular o projeto, siga os passos abaixo:
-
-### Pré-requisitos
-
-Certifique-se de ter o MongoDB instalado em sua máquina local.
-
-Para mais informações, [acesse a documentação](https://www.mongodb.com/2)
 
 ### Instalação
 
@@ -86,9 +77,9 @@ Para mais informações, [acesse a documentação](https://www.mongodb.com/2)
  git clone https://github.com/lucas-castro-developer/be-happy-with-me.git
  ```
 
-2. Abra uma instância do seu terminal e entre na pasta `backend`
+2. Abra uma instância do seu terminal e entre na pasta `frontend`
  ```sh
- cd backend
+ cd frontend
  ```
 
 3. Instale as dependências
@@ -96,27 +87,17 @@ Para mais informações, [acesse a documentação](https://www.mongodb.com/2)
  npm install
  ```
 
-4. Certifique-se de que o MongoDB esteja aberto e execute o seguinte o comando:
+4. Primeiro, faça o build dos arquivos codificados usando o comando (este comando deve ser usado toda vez que se faz alguma alteração no código)
  ```sh
- npm run dev
+ npm run build
+ ```
+ 
+4. Após o build, rode o comando abaixo para executar o projeto
+ ```sh
+ npm start
  ```
 
-5. Agora abra outra instância do seu terminal e entre na pasta `frontend`:
- ```sh
- cd frontend
- ```
-
-6. Instale as dependências
- ```sh
- npm install
- ```
-
-7. Execute o comando abaixo:
-```sh
-npm run dev
-```
-
-8. Pronto. Seu projeto estará funcionando tanto a nível de backend quanto frontend
+5. Pronto. Seu projeto estará funcionando para testes a nível de frontend
 
 ## Contribuição
 
