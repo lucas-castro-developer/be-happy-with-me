@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lucas-castro-developer/be-happy-with-me">
-    <img src="images/my-money-app.png">
+    <img src="images/logo.png">
   </a>
 
   <h3 align="center">BeHappyWithMe</h3>
@@ -41,21 +41,21 @@
 
 ## Sobre o projeto
 
-O projeto My Money App tem por objetivo ajudar os usuários a organizar sua vida financeira.
+O projeto Be Happy With Me tem por objetivo disponibilizar uma ferramenta de feedback feliz para os usuários.
 
-Para isso, possui recursos como adicionar crédito e débito, organizar os recebimentos e as despesas por mês e ano, e dar a possibilidade do usuário clonar lançamentos de crédito e débito para agilizar o preenchimento das informações.
+Por hora, a estrutura abarca somente a versão frontend, mas já com a estrutura de PWA implementada
 
-O sistema possui fluxo de login e o dashboard mostra um total de todas as informações inseridas.
+O usuário pode escolher o nome e o avatar que deseja usar.
 
 Abaixo, segue imagens do layout construído em dispositivos  `mobile` e `desktop`:
 
 **Mobile**
 
-<img src="images/my-money-app-mobile.PNG">
+<img src="images/be-happy-with-me-mob.PNG">
 
 **Desktop**
 
-<img src="images/my-money-app.png">
+<img src="images/be-happy-with-me-desk.PNG">
 
 ### Construído com
 
@@ -64,6 +64,7 @@ Este projeto foi construído com o auxílio das seguintes ferramentas
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 * [ReactJS](https://pt-br.reactjs.org/)
+* [Pure.css](https://purecss.io/)
 
 <!-- GETTING STARTED -->
 ## Iniciando
